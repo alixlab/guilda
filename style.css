@@ -1,0 +1,44 @@
+header .carousel-inner .item{
+    height: 100vh;
+}
+
+body{
+    background-color: black;
+}
+.navbar-intense{
+    background-color: transparent;
+}
+
+.banner{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.slide-one{
+    background-image: url("/img/heromobile.jpg");
+}
+
+.slide-two{
+    background-image: url("/img/swordsmobile.jpg");
+}
+
+.slide-three{
+    background-image: url("/img/giantmobile.jpg")
+}
+
+  /* For devices 800px and larger: */
+  @media only screen and (min-device-width: 800px) {
+    .slide-one{
+        background-image: url("/img/monster.jpg");
+    }
+    
+    .slide-two{
+        background-image: url("/img/swords.jpg");
+    }
+    
+    .slide-three{
+        background-image: url("/img/giant.jpg")
+    }
+  }
