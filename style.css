@@ -1,9 +1,8 @@
+body{
+font-size: 12px;
+}
 header .carousel-inner .item{
     height: 100vh;
-}
-
-body{
-    background-color: black;
 }
 .navbar-intense{
     background-color: transparent;
@@ -28,6 +27,52 @@ body{
     background-image: url("/img/giantmobile.jpg")
 }
 
+.pro-icon{
+    background-image: url("/img/proicon.png");
+    width: 10%;
+    background-repeat: no-repeat;
+}
+
+.bgcolor-item{
+background-color: #232323;
+}
+
+article{
+    width: 60%;
+    color: #ffffff;
+}
+
+.picture-monster{
+    background-color: #FFFF;
+    border-radius: 8vh 0 0 8vh;
+    width: 40%;
+}
+
+
+.monster{
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
+.info-block{
+    width: 50%;
+}
+
+.description{
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+
   /* For devices 800px and larger: */
   @media only screen and (min-device-width: 800px) {
     .slide-one{
@@ -42,3 +87,4 @@ body{
         background-image: url("/img/giant.jpg")
     }
   }
+
