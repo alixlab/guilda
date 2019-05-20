@@ -15,6 +15,7 @@ function getSpells() {
     console.log(error);
   });
 }
+
 function getMonsters() {
   return fetch(routes.monsters).then(response => response.json()).catch(error => {
     console.log(error);
