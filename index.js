@@ -8,14 +8,3 @@ const routes = {
     magicItems: firstDomain + 'magicitems',
     equipment: secondDomain + 'equipment'
 }
-
-function getData(route) {
-    return fetch(route)
-        .then(response => response.json())
-        .catch(error => {
-            console.log(error);
-        });
-}
-
-let data = getData(routes.spells);
-console.log(data);
