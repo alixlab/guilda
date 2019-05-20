@@ -63,7 +63,7 @@ article{
 }
 
 .buttons-block{
-    widows: 77%
+    width: 75%
     
 }
 
@@ -80,7 +80,7 @@ article{
 {
     position: absolute;
     top: 12vh;
-    width: 96.66666666666666%;
+    width: 100%;
     color: #FFF;
 }
 .btn-min-block
