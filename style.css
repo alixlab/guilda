@@ -10,6 +10,7 @@ header .carousel-inner .item {
     background-color: transparent;
 }
 
+
 .banner {
     background-size: cover;
     background-position: center center;
@@ -88,11 +89,25 @@ article {
     line-height: 2rem;
 }
 
-.btn-clear {
+.btn:focus, .btn::-moz-focus-inner{
+    outline:none;
+    border:none;
+  }
+
+  .btn:active  {
+    position:relative;
+    top:5px;
+    box-shadow:none;
+  }
+
+  .btn-clear {
     color: #FFF;
     background-color: transparent;
-    border-color: #FFF;
+    border-color: #C3BEBA;
+    border-radius: 05px;
     margin-right: 15px;
+    font-weight: 600;
+    box-shadow:0 2px 0 #C3BEBA;
 }
 
 .btn-clear:hover {
@@ -102,6 +117,18 @@ article {
 
 .btn-margin {
     margin: 1rem;
+}
+
+.btn-premium {
+    position: absolute;
+    color: #FFF;
+    background-color: blue;
+    border-color: #C3BEBA;
+    border-radius: 05px;
+    margin-right: 15px;
+    font-weight: 600;
+    box-shadow:0 2px 0 #C3BEBA;
+
 }
 
 /* For devices 800px and larger: */

@@ -8,3 +8,13 @@ const routes = {
     magicItems: firstDomain + 'magicitems',
     equipment: secondDomain + 'equipment'
 }
+
+function getMonsters(routes) {
+    return fetch(routes.monsters)
+    .then(response => response.json())
+    .catch(error => {
+       console.log(error);
+    })
+}
+
+console.log(getMonsters())
