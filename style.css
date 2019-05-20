@@ -1,55 +1,56 @@
-body{
-font-size: 12px;
+body {
+    font-size: 12px;
 }
-header .carousel-inner .item{
+
+header .carousel-inner .item {
     height: 100vh;
 }
-.navbar-intense{
+
+.navbar-intense {
     background-color: transparent;
 }
 
-.banner{
+.banner {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     height: 100vh;
 }
 
-.slide-one{
+.slide-one {
     background-image: url("/img/heromobile.jpg");
 }
 
-.slide-two{
+.slide-two {
     background-image: url("/img/swordsmobile.jpg");
 }
 
-.slide-three{
-    background-image: url("/img/giantmobile.jpg")
+.slide-three {
+    background-image: url("/img/giantmobile.jpg");
 }
 
-.pro-icon{
+.pro-icon {
     background-image: url("/img/proicon.png");
     width: 10%;
     background-repeat: no-repeat;
 }
 
-.bgcolor-item{
-background-color: #232323;
+.bgcolor-item {
+    background-color: #232323;
 }
 
-article{
+article {
     width: 60%;
     color: #ffffff;
 }
 
-.picture-monster{
+.picture-monster {
     background-color: #FFFF;
     border-radius: 8vh 0 0 8vh;
     width: 40%;
 }
 
-
-.monster{
+.monster {
     max-width: 100%;
     height: auto;
     cursor: pointer;
@@ -57,63 +58,68 @@ article{
     margin-right: auto;
 }
 
-.name{
+.name {
     font-weight: 700;
     font-size: 1.2rem;
 }
 
-.buttons-block{
-    width: 75%
-    
+.buttons-block {
+    width: 75%;
 }
 
-.info-block{
+.info-block {
     width: 50%;
 }
 
-.description{
+.description {
     font-weight: 600;
     font-size: 0.9rem;
 }
 
-.main-text
-{
+.main-text {
     position: absolute;
     top: 12vh;
     width: 100%;
     color: #FFF;
 }
-.btn-min-block
-{
+
+.btn-min-block {
     max-width: 9rem;
     line-height: 2rem;
 }
-.btn-clear
-{
+
+.btn-clear {
     color: #FFF;
     background-color: transparent;
     border-color: #FFF;
     margin-right: 15px;
 }
-.btn-clear:hover
-{
+
+.btn-clear:hover {
     color: #000;
     background-color: #FFF;
 }
 
+.btn-margin {
+    margin: 1rem;
+}
 
-  /* For devices 800px and larger: */
-  @media only screen and (min-device-width: 800px) {
-    .slide-one{
+/* For devices 800px and larger: */
+
+@media only screen and (min-device-width: 800px) {
+    .slide-one {
         background-image: url("/img/monster.jpg");
     }
-    
-    .slide-two{
+    .slide-two {
         background-image: url("/img/swords.jpg");
     }
-    
-    .slide-three{
-        background-image: url("/img/giant.jpg")
+    .slide-three {
+        background-image: url("/img/giant.jpg");
     }
-  }
+}
 
+@media only screen and (max-device-width: 423px) {
+    .btn-margin {
+        margin: 0 0.8rem 1rem 0;
+    }
+}
