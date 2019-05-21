@@ -13,7 +13,7 @@ header .carousel-inner .item {
 .navbar-light .navbar-nav .nav-link {
     font-size: 16px;
     color: #FFF;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .banner {
@@ -24,19 +24,19 @@ header .carousel-inner .item {
 }
 
 .slide-one {
-    background-image: url("/img/heromobile.jpg");
+    background-image: url("/public/img/heromobile.jpg");
 }
 
 .slide-two {
-    background-image: url("/img/swordsmobile.jpg");
+    background-image: url("/public/img/swordsmobile.jpg");
 }
 
 .slide-three {
-    background-image: url("/img/giantmobile.jpg");
+    background-image: url("/public/img/giantmobile.jpg");
 }
 
 .logo {
-    content: url("/img/logo.png");
+    content: url("/public/img/logo.png");
 }
 
 .bgcolor-item {
@@ -92,29 +92,29 @@ article {
     line-height: 2rem;
 }
 
-.btn:focus, .btn::-moz-focus-inner{
-    outline:none;
-    border:none;
-  }
-
-.btn:active  {
-  position:relative;
-  top:5px;
-  box-shadow:none;
+.btn:focus, .btn::-moz-focus-inner {
+    outline: none;
+    border: none;
 }
 
-.bold{
+.btn:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}
+
+.bold {
     font-weight: 600;
 }
 
 .btn-clear {
-   color: #FFF;
-   background-color: transparent;
-   border-color: #C3BEBA;
-   border-radius: 1,5em / 5em;
-   margin-right: 15px;
-   font-weight: 600;
-   box-shadow:0 2px 0 #C3BEBA;
+    color: #FFF;
+    background-color: transparent;
+    border-color: #C3BEBA;
+    border-radius: 1, 5em / 5em;
+    margin-right: 15px;
+    font-weight: 600;
+    box-shadow: 0 2px 0 #C3BEBA;
 }
 
 .btn-clear:hover {
@@ -130,10 +130,10 @@ article {
     color: #FFF;
     background-color: #366181;
     border-color: #C3BEBA;
-    border-radius: 1,5em / 5em;
+    border-radius: 1, 5em / 5em;
     width: 100%;
     font-weight: 600;
-    box-shadow:0 2px 0 #C3BEBA;
+    box-shadow: 0 2px 0 #C3BEBA;
     position: relative;
 }
 
@@ -144,7 +144,7 @@ article {
     top: 20%;
     width: 50%;
     height: 200%;
-    background: url('img/star.png')  no-repeat;
+    background: url('/public/img/star.png') no-repeat;
     background-size: 9%;
 }
 
@@ -153,22 +153,27 @@ article {
     background-color: #366181;
 }
 
-.details-box{
+.details-box {
     border: gray 0.5px solid;
     border-radius: 5px;
+}
+
+a:hover {
+    cursor: pointer;
+    color: red;
 }
 
 /* For devices 800px and larger: */
 
 @media only screen and (min-device-width: 800px) {
     .slide-one {
-        background-image: url("/img/monster.jpg");
+        background-image: url("/public/img/monster.jpg");
     }
     .slide-two {
-        background-image: url("/img/swords.jpg");
+        background-image: url("/public/img/swords.jpg");
     }
     .slide-three {
-        background-image: url("/img/giant.jpg");
+        background-image: url("/public/img/giant.jpg");
     }
 }
 
@@ -176,8 +181,4 @@ article {
     .btn-margin {
         margin: 0 0.8rem 1rem 0;
     }
-}
-
-a {
-    cursor: pointer;
 }

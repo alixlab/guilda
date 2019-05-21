@@ -4,11 +4,7 @@ function templateMonsters(monster) {
   $('#character').append(`
      <div class="bgcolor-item d-flex justify-content-end my-3">
      <article class="p-2 d-flex flex-column">
-<<<<<<< HEAD:public/monsters.js
         <a class="name" id=${monster.slug}>${monster.name}</a>
-=======
-        <span class="name" id=${monster.slug} data-toggle='modal' data-target='#monsterModalLong'>${monster.name}</span>
->>>>>>> 3a3b79ed08770384f0789cbe46f33dc33e03fc74:monsters.js
           <div class="d-flex">
             <div class="info-block" >
               <section class="pt-1 d-flex flex-column">
@@ -38,20 +34,13 @@ function templateMonsters(monster) {
     </div>
     `);
 
-  $(`span[id=${monster.slug}]`).click(function() {
+  $(`a[id=${monster.slug}]`).click(function() {
     detailMonster(monster);
   });
 }
 
 function detailMonster(monster) {
-<<<<<<< HEAD:public/monsters.js
-  if (typeof String === 'undefined') {
-    return;
-  }
   $('#character').append(`
-=======
-  $('.modal-body').html(`
->>>>>>> 3a3b79ed08770384f0789cbe46f33dc33e03fc74:monsters.js
     <div class="bgcolor-item d-flex justify-content-end" >
       <article class="p-2 d-flex flex-column">
         <span class="name">${monster.name}</span>

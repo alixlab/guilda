@@ -16,11 +16,7 @@ function templateRaces(race) {
   $('#races').append(`
 <div class="bgcolor-item d-flex justify-content-end">
     <article class="p-2 d-flex flex-column">
-<<<<<<< HEAD:public/races.js
-        <a class="name" id=${race.name} data-toggle='modal' data-target='#exampleModalLong'>${race.name}</a>
-=======
-        <span class="name" id=${race.name} data-toggle='modal' data-target='#raceModalLong'>${race.name}</span>
->>>>>>> 3a3b79ed08770384f0789cbe46f33dc33e03fc74:races.js
+        <a class="name" id=${race.name} data-toggle='modal' data-target='#raceModalLong'>${race.name}</a>
         <div class="d-flex">
             <div class="info-block" >
                 <section>
@@ -35,7 +31,7 @@ function templateRaces(race) {
 </div>
 `);
 
-  $(`span[id=${race.name}]`).click(function() {
+  $(`a[id=${race.name}]`).click(function() {
     detailRace(race);
   });
 }
