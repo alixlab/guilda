@@ -4,7 +4,7 @@ function templateMonsters(monster) {
   $('#character').append(`
      <div class="bgcolor-item d-flex justify-content-end my-3">
      <article class="p-2 d-flex flex-column">
-        <span class="name" id=${monster.slug}>${monster.name}</span>
+        <span class="name" id=${monster.slug} data-toggle='modal' data-target='#monsterModalLong'>${monster.name}</span>
           <div class="d-flex">
             <div class="info-block" >
               <section class="pt-1 d-flex flex-column">
@@ -35,13 +35,12 @@ function templateMonsters(monster) {
     `);
 
   $(`span[id=${monster.slug}]`).click(function() {
-    $('#character').empty();
     detailMonster(monster);
   });
 }
 
 function detailMonster(monster) {
-  $('#character').append(`
+  $('.modal-body').html(`
     <div class="bgcolor-item d-flex justify-content-end" >
       <article class="p-2 d-flex flex-column">
         <span class="name">${monster.name}</span>
