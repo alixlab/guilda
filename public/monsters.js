@@ -4,7 +4,7 @@ function templateMonsters(monster) {
   $('#character').append(`
      <div class="bgcolor-item d-flex justify-content-end my-3">
      <article class="p-2 d-flex flex-column">
-        <span class="name" id=${monster.slug}>${monster.name}</span>
+        <a class="name" id=${monster.slug}>${monster.name}</a>
           <div class="d-flex">
             <div class="info-block" >
               <section class="pt-1 d-flex flex-column">
@@ -41,6 +41,9 @@ function templateMonsters(monster) {
 }
 
 function detailMonster(monster) {
+  if (typeof String === 'undefined') {
+    return;
+  }
   $('#character').append(`
     <div class="bgcolor-item d-flex justify-content-end" >
       <article class="p-2 d-flex flex-column">

@@ -164,3 +164,7 @@ article {
         margin: 0 0.8rem 1rem 0;
     }
 }
+
+a {
+    cursor: pointer;
+}
