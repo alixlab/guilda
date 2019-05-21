@@ -24,7 +24,41 @@ function getMonsters() {
 
 async function displayMonsters() {
   let dataMonsters = await getMonsters();
-  console.log(dataMonsters);  
+  let character = document.querySelector('#character');
+  character.innerHTML = `
+   ${dataMonsters.results.map((monster) => `
+   <div class="bgcolor-item d-flex justify-content-end my-3">
+   <article class="p-2 d-flex flex-column">
+      <span class="name">${monster.name}</span>
+        <div class="d-flex">
+          <div class="info-block" >
+            <section class="pt-1 d-flex flex-column">
+              <span class="title"> TYPE</span>
+              <span class="description">${monster.type}</span>
+            </section>
+            <section class="pt-3 d-flex flex-column">
+              <span class="title"> ALIGNMENT</span>
+              <span class="description">${monster.alignment}</span>
+            </section>
+          </div>
+          <div class="info-block">
+            <section class="pt-1 d-flex flex-column">
+              <span class="title"> SIZE</span>
+              <span class="description">${monster.size}</span>
+            </section>
+            <section class="pt-3 d-flex flex-column">
+              <span class="title"> ENVIRONMENT</span>
+              <span class="description">${monster.environment}</span>
+            </section>
+          </div>
+        </div>
+    </article>
+    <picture class="picture-monster d-flex align-item-center">
+      <img class="monster img-fluid" srcset="/img/636288206263978085.png">
+    </picture>
+  </div>
+  `).join("")}
+  `
 }
   
 function getRaces() {
