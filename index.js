@@ -22,20 +22,6 @@ function getMonsters() {
   });
 }
 
-function centerModal() {
-  $(this).css('display', 'block');
-  let $dialog = $(this).find('.modal-dialog');
-  let offset = ($(window).height() - $dialog.height()) / 2;
-  // Center modal vertically in window
-  $dialog.css('margin-top', offset);
-}
-
-$('.modal').on('show.bs.modal', centerModal);
-
-$(window).on('resize', function() {
-  $('.modal:visible').each(centerModal);
-});
-
 async function displayMonsters() {
   let dataMonsters = await getMonsters();
   let character = document.querySelector('#character');
@@ -81,6 +67,13 @@ function getRaces() {
   });
 }
 
+async function displayRaces() {
+  let dataRaces = await getRaces();
+  dataRaces.results.forEach(race => {
+    templateRaces(race); 
+  });
+}
+
 function getClasses() {
   return fetch(routes.classes).then(response => response.json()).catch(error => {
     console.log(error);
@@ -98,3 +91,17 @@ function getEquipment() {
     console.log(error);
   });
 }
+
+function centerModal() {
+  $(this).css('display', 'block');
+  let $dialog = $(this).find('.modal-dialog');
+  let offset = ($(window).height() - $dialog.height()) / 2;
+  // Center modal vertically in window
+  $dialog.css('margin-top', offset);
+}
+
+$('.modal').on('show.bs.modal', centerModal);
+
+$(window).on('resize', function() {
+  $('.modal:visible').each(centerModal);
+});
