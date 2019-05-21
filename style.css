@@ -10,13 +10,11 @@ header .carousel-inner .item {
     background-color: transparent;
 }
 
-
 .navbar-light .navbar-nav .nav-link {
     font-size: 16px;
     color: #FFF;
     font-weight:bold;
 }
-
 
 .banner {
     background-size: cover;
@@ -37,10 +35,8 @@ header .carousel-inner .item {
     background-image: url("/img/giantmobile.jpg");
 }
 
-.pro-icon {
-    background-image: url("/img/proicon.png");
-    width: 10%;
-    background-repeat: no-repeat;
+.logo {
+    content: url("/img/logo.png");
 }
 
 .bgcolor-item {
@@ -101,11 +97,15 @@ article {
     border:none;
   }
 
-  .btn:active  {
-    position:relative;
-    top:5px;
-    box-shadow:none;
-  }
+.btn:active  {
+  position:relative;
+  top:5px;
+  box-shadow:none;
+}
+
+.bold{
+    font-weight: 600;
+}
 
 .btn-clear {
    color: #FFF;
@@ -151,6 +151,11 @@ article {
 .btn-premium:hover {
     color: #F8F119;
     background-color: #366181;
+}
+
+.details-box{
+    border: gray 0.5px solid;
+    border-radius: 5px;
 }
 
 /* For devices 800px and larger: */
