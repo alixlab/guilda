@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +9,6 @@
     <title>Guilda</title>
 </head>
 <div class="container-fluid">
-
     <body data-spy="scroll" data-target="#navbar-responsive bg-white">
         <header>
             <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top navbar-intense">
@@ -56,9 +54,20 @@
                                 </div>
                             </div>
                         </article>
-                        <picture class="picture-monster d-flex align-item-center">
+                        <picture class="picture-monster d-flex align-item-center" data-toggle="modal"
+                            data-target="#myModal">
                             <img class="monster img-fluid" srcset="/img/636288206263978085.png">
                         </picture>
+                    </div>
+                    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <img src="/img/636288206263978085.png" class="picture-monster image-responsive">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- FIM -->
                     <section class="d-flex mt-3 justify-content-around">
@@ -125,26 +134,39 @@
                         <div class="d-flex mt-2">
                             <div class="d-flex flex-column w-50">
                                 <span class="bold">Senses</span>
-                                <span>Darkvision</span>
+                                <span class="bold mr-3">Darkvision</span>
                                 <span>120 ft</span>
-                                <span>Passive Perception</span>
+                                <span class="bold mr-3">Passive Perception</span>
                                 <span>10</span>
                             </div>
                         </div>
                     </section>
                     <section class="details-box mt-2">
-                        <h5>Special Habilities</h5>
+                        <h5 class="bold mr-3">Special Habilities</h5>
                         <h6>Amphibious</h6>
-                       <p></p>
+                        <h6>Mucous Cloud</h6>
+                        <h6>Probing Telepathy</h6>
+                    </section>
+                    <section class="details-box mt-2">
+                        <h5 class="bold mr-3">Actions</h5>
+                        <h6>Multiattack</h6>
+                        <h6>Tentacle</h6>
+                        <h6>Tail</h6>
+                        <h6>Enslave</h6>
+                    </section>
+                    <section class="details-box mt-2">
+                        <h5 class="bold mr-3">Legendary Actions</h5>
+                        <h6>Detect</h6>
+                        <h6>Tail Swipe</h6>
+                        <h6>Psychic Drain</h6>
                     </section>
                 </section>
             </div>
 </div>
 </main>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="index.js"></script>
 </body>
-
 </html>

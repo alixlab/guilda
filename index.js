@@ -74,7 +74,7 @@ async function displayMonsters() {
   `).join("")}
   `
 }
-
+  
 function getRaces() {
   return fetch(routes.races).then(response => response.json()).catch(error => {
     console.log(error);

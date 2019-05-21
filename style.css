@@ -86,6 +86,17 @@ article {
     line-height: 2rem;
 }
 
+.btn:focus, .btn::-moz-focus-inner{
+    outline:none;
+    border:none;
+  }
+
+.btn:active  {
+  position:relative;
+  top:5px;
+  box-shadow:none;
+}
+
 .bold{
     font-weight: 600;
 }
@@ -98,11 +109,15 @@ article {
     color: #B40B0B;
     font-size: 0.9rem;
 }
+
 .btn-clear {
     color: #FFF;
     background-color: transparent;
-    border-color: #FFF;
+    border-color: #C3BEBA;
+    border-radius: 05px;
     margin-right: 15px;
+    font-weight: 600;
+    box-shadow:0 2px 0 #C3BEBA;
 }
 
 .btn-clear:hover {
@@ -112,6 +127,17 @@ article {
 
 .btn-margin {
     margin: 1rem;
+}
+
+.btn-premium {
+    position: absolute;
+    color: #FFF;
+    background-color: blue;
+    border-color: #C3BEBA;
+    border-radius: 05px;
+    margin-right: 15px;
+    font-weight: 600;
+    box-shadow:0 2px 0 #C3BEBA;
 }
 
 .details-box{
