@@ -36,6 +36,8 @@ $(window).on('resize', function() {
   $('.modal:visible').each(centerModal);
 });
 
+displayMonsters();
+
 async function displayMonsters() {
   let dataMonsters = await getMonsters();
   let character = document.querySelector('#character');
@@ -68,7 +70,7 @@ async function displayMonsters() {
         </div>
     </article>
     <picture class="picture-monster d-flex align-item-center">
-      <img class="monster img-fluid" srcset="/img/636288206263978085.png">
+      <img class="monster img-fluid" srcset="/img/characters/${monster.slug}.png">
     </picture>
   </div>
   `).join("")}
