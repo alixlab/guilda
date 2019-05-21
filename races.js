@@ -16,7 +16,7 @@ function templateRaces(race) {
   $('#races').append(`
 <div class="bgcolor-item d-flex justify-content-end">
     <article class="p-2 d-flex flex-column">
-        <span class="name" id=${race.name} data-toggle='modal' data-target='#exampleModalLong'>${race.name}</span>
+        <span class="name" id=${race.name} data-toggle='modal' data-target='#raceModalLong'>${race.name}</span>
         <div class="d-flex">
             <div class="info-block" >
                 <section>
