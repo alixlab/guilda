@@ -10,6 +10,12 @@ header .carousel-inner .item {
     background-color: transparent;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    font-size: 16px;
+    color: #FFF;
+    font-weight:bold;
+}
+
 .banner {
     background-size: cover;
     background-position: center center;
@@ -101,23 +107,14 @@ article {
     font-weight: 600;
 }
 
-.line{
-    height: 2px;
-}
-
-.font-color-red{
-    color: #B40B0B;
-    font-size: 0.9rem;
-}
-
 .btn-clear {
-    color: #FFF;
-    background-color: transparent;
-    border-color: #C3BEBA;
-    border-radius: 05px;
-    margin-right: 15px;
-    font-weight: 600;
-    box-shadow:0 2px 0 #C3BEBA;
+   color: #FFF;
+   background-color: transparent;
+   border-color: #C3BEBA;
+   border-radius: 1,5em / 5em;
+   margin-right: 15px;
+   font-weight: 600;
+   box-shadow:0 2px 0 #C3BEBA;
 }
 
 .btn-clear:hover {
@@ -130,14 +127,30 @@ article {
 }
 
 .btn-premium {
-    position: absolute;
     color: #FFF;
-    background-color: blue;
+    background-color: #366181;
     border-color: #C3BEBA;
-    border-radius: 05px;
-    margin-right: 15px;
+    border-radius: 1,5em / 5em;
+    width: 100%;
     font-weight: 600;
     box-shadow:0 2px 0 #C3BEBA;
+    position: relative;
+}
+
+.btn-premium::after {
+    left: 20%;
+    content: "";
+    position: absolute;
+    top: 20%;
+    width: 50%;
+    height: 200%;
+    background: url('img/star.png')  no-repeat;
+    background-size: 9%;
+}
+
+.btn-premium:hover {
+    color: #F8F119;
+    background-color: #366181;
 }
 
 .details-box{
