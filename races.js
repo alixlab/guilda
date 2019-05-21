@@ -16,7 +16,7 @@ function templateRaces(race) {
   $('#races').append(`
 <div class="bgcolor-item d-flex justify-content-end">
     <article class="p-2 d-flex flex-column">
-        <span class="name" id=${race.name} data-toggle='modal' data-target='#exampleModalLong'>${race.name}</span>
+        <span class="name" id=${race.name} data-toggle='modal' data-target='#raceModalLong'>${race.name}</span>
         <div class="d-flex">
             <div class="info-block" >
                 <section>
@@ -103,7 +103,7 @@ function detailRace(race) {
   race.subraces.forEach(subrace => {
     $('#subraces').append(`
     <h6 class="bold">${subrace.name}</h6>
-    <span class="description">${subrace.desc}</span>
+    <span class="description">${subrace.desc.replace(/#/g, '')}</span>
     <br>
     <span class="description">${clearText(subrace.asi_desc)}</span>
     `);
