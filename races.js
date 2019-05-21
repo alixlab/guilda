@@ -104,7 +104,7 @@ function detailRace(race) {
   race.subraces.forEach(subrace => {
     $('#subraces').append(`
     <h6 class="bold">${subrace.name}</h6>
-    <span class="description">${subrace.desc}</span>
+    <span class="description">${subrace.desc.replace(/#/g, '')}</span>
     <br>
     <span class="description">${clearText(subrace.asi_desc)}</span>
     `);
