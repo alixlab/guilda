@@ -128,13 +128,13 @@ function detailMonster(monster) {
     </section>
     <hr class="line">
     </section>
-    <section class="details-box mt-2" id="abilities">
+    <section class="details-box mt-2 p-1" id="abilities">
       <h5 class="bold mr-3">Special Abilities</h5>
     </section>
-    <section class="details-box mt-2" id="actions">
+    <section class="details-box mt-2 p-1" id="actions">
       <h5 class="bold mr-3">Actions</h5>
     </section>
-    <section class="details-box mt-2" id="legendary">
+    <section class="details-box mt-2 p-1" id="legendary">
       <h5 class="bold mr-3">Legendary Actions</h5>
     </section>
   `);
@@ -150,9 +150,9 @@ function detailMonster(monster) {
     $('#actions').append(`
     <h6 class="bold mt-2">${action.name}</h6>
     <span>${action.desc}</span>
-    <span>${action.attack_bonus}</span>
-    <span>${action.damage_dice}</span>
-    <span>${action.damage_bonus}</span>
+    <span>Attack Bonus: ${action.attack_bonus ? action.attack_bonus : '-----'}</span>
+    <span>Damage Dice: ${action.damage_dice ? action.damage_dice : '-----'}</span>
+    <span>Damage Bonus: ${action.damage_bonus ? action.damage_bonus : '-----'}</span>
     `);
   });
       

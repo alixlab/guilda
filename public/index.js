@@ -36,12 +36,6 @@ async function displayRaces() {
   });
 }
 
-function getClasses() {
-  return fetch(routes.classes).then(response => response.json()).catch(error => {
-    console.log(error);
-  });
-}
-
 function centerModal() {
   $(this).css('display', 'block');
   let $dialog = $(this).find('.modal-dialog');

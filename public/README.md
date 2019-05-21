@@ -11,15 +11,15 @@
 
 ## Preâmbulo
 
-RPG, sigla para Role Playing Game, é um gênero de jogo onde jogadores assumem o papel de personagens imaginários, em um mundo com regras pré determinadas que é controlado por um mestre escolhido pelo grupo. Essas regras são compiladas e apresentadas aos jogadores através de séries de livros, que englobam diversos âmbitos do jogo, desde inimigos, características de personagens, armas, etc.
+RPG, sigla para Role Playing Game, é um gênero de jogo em que os jogadores assumem o papel de personagens imaginários, em um mundo com regras predeterminadas que é controlado por um mestre escolhido pelo grupo. Essas regras são compiladas e apresentadas aos jogadores através de séries de livros, que englobam diversos âmbitos do jogo, desde inimigos, características de personagens, armas, etc.
 Existem vários sistemas de regras disponíveis para serem utilizados, elaborados tanto por empresas quanto por jogadores independentes, sendo D&D um dos sistemas mais utilizados entre jogadores do mundo todo.
 
 
 ## Definição_do_produto
 
-O site Livros da Guilda foi desenvolvido tendo com base o conceito mobile first, com foco em usuários que jogam o sistema de RPG D&D, seja um jogador, um mestre ou até um iniciante curioso sobre as informações do sistema de jogo. Nosso produto reúne informações contidas em livros do sistema D&D, essenciais para a jogabilidade, como o livro do jogador e livro dos monstros, permitindo que os usuários utilizem menos ou até dispensem o uso de livros físicos ou digitais no momento de jogo.
-Devido ao tempo disponível, não foi possível implementar todas as funcionalidades desejadas, como por exemplo as fichas de equipamentos, magias e etc, mas o objetivo é que o site ofereça o máximo de informações possíveis contidas nos livros de D&D.
-Em uma versão 2.0, todas essas funcionalidades serão implementadas, bem como o estudo da viabilidade de adição de novos sistemas de jogo RPG detectados como populares em nossa pesquisa, como Vampíro A máscara ou Lobisomen: O apocalipse.
+O site Livros da Guilda foi desenvolvido tendo como base o conceito mobile first, com foco em usuários que jogam o sistema de RPG D&D, seja um jogador, um mestre ou até um iniciante curioso sobre as informações do sistema de jogo. Nosso produto reúne informações contidas em livros do sistema D&D, essenciais para a jogabilidade, como o livro do jogador e livro dos monstros, permitindo que os usuários utilizem menos ou até dispensem o uso de livros físicos ou digitais no momento de jogo.
+Devido ao tempo disponível, não foi possível implementar todas as funcionalidades desejadas, como as fichas de equipamentos, magias e etc, mas o objetivo é que o site ofereça o máximo de informações possíveis contidas nos livros de D&D.
+Em uma versão 2.0, todas essas funcionalidades serão implementadas, bem como o estudo da viabilidade de adição de novos sistemas de jogo RPG detectados como populares em nossa pesquisa, como Vampiro: A máscara ou Lobisomem: O apocalipse.
 
 
 ## Público_alvo
@@ -47,14 +47,14 @@ Nome: Olívia
 Idade: 26 anos
 Estado civil: Divorciada
 Ocupação: Publicitária
-Características: Mora em São Paulo com seu namorado. Joga RPG aos finais de semana com seus primos e amigos. Começou a jogar a pouco mais de um ano. Quer uma opção mais prática e rápida para consultar as informações do jogo.
+Características: Mora em São Paulo com seu namorado. Joga RPG aos finais de semana com seus primos e amigos. Começou a jogar há pouco mais de um ano. Quer uma opção mais prática e rápida para consultar as informações do jogo.
 
 *3
 Nome: Diego
 Idade: 39 anos
 Estado civil: Casado
 Ocupação: Técnico de segurança do trabalho
-Características: Mora no Rio de Janeiro. Tem 1 um filho de 3 anos. Joga RPG há 20 anos com amigos 2x por semana. Reclama do peso dos livros que precisa carregar para todos os jogos. Gostaria de algo mais prático para consultar nas sessões.
+Características: Mora no Rio de Janeiro. Tem 1 um filho de 3 anos. Joga RPG há 20 anos com amigos 2 vezes por semana. Reclama do peso dos livros que precisa carregar para todos os jogos. Gostaria de algo mais prático para consultar nas sessões.
 
 
 ## Testes_de_usabilidade
@@ -62,9 +62,9 @@ Características: Mora no Rio de Janeiro. Tem 1 um filho de 3 anos. Joga RPG há
 Entrevistas com os usuários utilizando o Protótipo Inicial Digital
 
 * Yuiti Ara - Os botões estão difíceis de visualizar e as fotos de fundo estão rodando muito rápido.
-* Felipe dos Santos - Não achei nenhum problema, o mestre do meu grupo usaria sempre pra ver a ficha dos monstros.
-* Milena Gonzales - Achei o fundo do site muito bonitas, mas estão "fortes" em relação aos botões.
-* Marcos Vinícius Pradela - Muito legal, deixa as informações sempre a mão, principalmente para iniciantes.
+* Felipe dos Santos - Não achei nenhum problema, o mestre do meu grupo usaria sempre para ver a ficha dos monstros.
+* Milena Gonzales - Achei o fundo do site muito bonito, mas as imagens estão "fortes" em relação aos botões.
+* Marcos Vinícius Pradela - Muito legal, deixa as informações sempre à mão, principalmente para iniciantes.
 
 * Problemas detectados nos testes->
 
@@ -72,7 +72,7 @@ Entrevistas com os usuários utilizando o Protótipo Inicial Digital
 
 -Clareamos as imagens do fundo, aumentando o contraste entre o fundo e os botões.
 
--Diminuímos a velocidade de troca entre as imagens do carrosel.
+-Diminuímos a velocidade de troca entre as imagens do carrossel.
 
 
 ## Protótipo Final
