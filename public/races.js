@@ -43,9 +43,9 @@ function detailRace(race) {
       <article class="p-2 d-flex flex-column">
         <span class="name">${race.name}</span>
           <div class="d-flex">
-            <div class="info-block">
+            <div class="info-block w-100">
               <section class="pt-1 d-flex flex-column">
-                <span class="description">${race.desc.replace(/#/g, '')}</span>
+                <span class="description font-weight-normal">${race.desc.replace(/#/g, '')}</span>
               </section>
             </div>
           </div>
