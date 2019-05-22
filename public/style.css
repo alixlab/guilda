@@ -175,8 +175,6 @@ a:hover {
     color: red;
 }
 
-/* For devices 800px and larger: */
-
 @media only screen and (min-device-width: 800px) {
     .slide-one {
         background-image: url("/public/img/monster.jpg");
