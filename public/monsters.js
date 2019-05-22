@@ -29,7 +29,7 @@ function templateMonsters(monster) {
           </div>
       </article>
       <picture class="picture-monster d-flex align-item-center">
-        <img class="monster img-fluid" srcset="/public/img/characters/${monster.slug}.png">
+        <img class="monster img-fluid" srcset="img/characters/${monster.slug}.png">
       </picture>
     </div>
     `);
@@ -68,14 +68,14 @@ function detailMonster(monster) {
         </div>
       </article>
       <picture class="picture-monster d-flex align-item-center" data-toggle="modal" data-target="#myModal">
-        <img class="monster img-fluid" srcset="/public/img/characters/${monster.slug}.png">
+        <img class="monster img-fluid" srcset="img/characters/${monster.slug}.png">
       </picture>
     </div>
     <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-body">
-            <img src="/public/img/characters/${monster.slug}.png" class="picture-monster image-responsive">
+            <img src="img/characters/${monster.slug}.png" class="picture-monster image-responsive">
           </div>
         </div>
       </div>
