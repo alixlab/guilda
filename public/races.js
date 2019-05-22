@@ -14,13 +14,13 @@ function clearText(text) {
 
 function templateRaces(race) {
   $('#races').append(`
-<div class="bgcolor-item d-flex justify-content-end">
+<div class="bgcolor-item d-flex justify-content-end my-3">
     <article class="p-2 d-flex flex-column">
         <a class="name" id=${race.name} data-toggle='modal' data-target='#raceModalLong'>${race.name}</a>
         <div class="d-flex">
-            <div class="info-block" >
+            <div class="info-block w-100 pt-1" >
                 <section>
-                    <span class="description">${race.desc.replace(/#/g, '')}</span>
+                    <span class="description text-justify font-weight-normal">${race.desc.replace(/#/g, '')}</span>
                 </section>
             </div>
         </div>
