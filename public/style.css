@@ -16,6 +16,18 @@ header .carousel-inner .item {
     font-weight: bold;
 }
 
+.navbar-nav .nav-link {
+    font-size: 16px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.navbar-nav:hover .nav-link:hover {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
 .banner {
     background-size: cover;
     background-position: center center;
@@ -167,9 +179,6 @@ a:hover {
     cursor: pointer;
     color: red;
 }
-
-
-/* For devices 800px and larger: */
 
 @media only screen and (min-device-width: 800px) {
     .slide-one {
