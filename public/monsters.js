@@ -4,26 +4,26 @@ function templateMonsters(monster) {
   $('#character').append(`
      <div class="bgcolor-item d-flex justify-content-end my-3">
      <article class="p-2 d-flex flex-column">
-        <a class="name" id=${monster.slug} data-toggle='modal' data-target='#monsterModalLong'>${monster.name}</a>
+        <a class="name pb-1 text-capitalize" id=${monster.slug} data-toggle='modal' data-target='#monsterModalLong'>${monster.name}</a>
           <div class="d-flex">
             <div class="info-block" >
               <section class="pt-1 d-flex flex-column">
                 <span class="title"> TYPE</span>
-                <span class="description">${monster.type}</span>
+                <span class="description text-capitalize">${monster.type}</span>
               </section>
               <section class="pt-3 d-flex flex-column">
                 <span class="title"> ALIGNMENT</span>
-                <span class="description">${monster.alignment}</span>
+                <span class="description text-capitalize">${monster.alignment}</span>
               </section>
             </div>
             <div class="info-block">
               <section class="pt-1 d-flex flex-column">
                 <span class="title"> SIZE</span>
-                <span class="description">${monster.size}</span>
+                <span class="description text-capitalize">${monster.size}</span>
               </section>
               <section class="pt-3 d-flex flex-column">
                 <span class="title"> LANGUAGES</span>
-                <span class="description">${monster.languages}</span>
+                <span class="description text-capitalize">${monster.languages}</span>
               </section>
             </div>
           </div>
@@ -47,22 +47,22 @@ function detailMonster(monster) {
         <div class="d-flex">
           <div class="info-block">
             <section class="pt-1 d-flex flex-column">
-              <span class="title"> TYPE</span>
-              <span class="description">${monster.type}</span>
+              <span class="title font-weight-light">TYPE</span>
+              <span class="description text-capitalize">${monster.type}</span>
             </section>
             <section class="pt-3 d-flex flex-column">
-              <span class="title"> ALIGNMENT</span>
-              <span class="description">${monster.alignment}</span>
+              <span class="title font-weight-light">ALIGNMENT</span>
+              <span class="description text-capitalize">${monster.alignment}</span>
             </section>
           </div>
           <div class="info-block">
             <section class="pt-1 d-flex flex-column">
-              <span class="title"> SIZE</span>
+              <span class="title font-weight-light">SIZE</span>
               <span class="description">${monster.size}</span>
             </section>
             <section class="pt-3 d-flex flex-column">
-                <span class="title"> LANGUAGES</span>
-                <span class="description">${monster.languages}</span>
+                <span class="title font-weight-light">LANGUAGES</span>
+                <span class="description text-capitalize">${monster.languages}</span>
             </section>
           </div>
         </div>
@@ -97,59 +97,59 @@ function detailMonster(monster) {
     <section>
       <hr class="line">
       <section class="d-flex justify-content-around">
-        <div class=" mx-3 d-flex flex-column">
+        <div class=" mx-2 d-flex flex-column">
           <span class="text-center bold font-color-red">STR</span>
           <span class="text-center">${monster.strength}</span>
         </div>
-        <div class=" mx-3 d-flex flex-column">
+        <div class=" mx-2 d-flex flex-column">
           <span class="text-center bold font-color-red">DEX</span>
           <span class="text-center">${monster.dexterity}</span>
         </div>
-        <div class=" mx-3 d-flex flex-column">
+        <div class=" mx-2 d-flex flex-column">
           <span class="text-center bold font-color-red">CON</span>
           <span class="text-center">${monster.constitution}</span>
         </div>
-        <div class=" mx-3 d-flex flex-column">
+        <div class=" mx-2 d-flex flex-column">
           <span class="text-center bold font-color-red">INT</span>
           <span class="text-center">${monster.intelligence}</span>
         </div>
-        <div class=" mx-3 d-flex mx-3  flex-column">
+        <div class=" mx-2 d-flex flex-column">
           <span class="text-center bold font-color-red">WIS</span>
           <span class="text-center">${monster.wisdom}</span>
         </div>
-        <div class=" mx-3 d-flex mx-3  flex-column">
+        <div class=" mx-2 d-flex flex-column">
           <span class="text-center bold font-color-red">CHA</span>
           <span class="text-center">${monster.charisma}</span>
         </div>
-        <div class=" mx-3 d-flex mx-3  flex-column">
+        <div class=" mx-2 d-flex flex-column">
           <span class="text-center bold font-color-red">PER</span>
           <span class="text-center">${monster.perception}</span>
         </div>
     </section>
     <hr class="line">
     </section>
-    <section class="details-box mt-2 p-1" id="abilities">
+    <section class="details-box mt-3 p-2" id="abilities">
       <h5 class="bold mr-3">Special Abilities</h5>
     </section>
-    <section class="details-box mt-2 p-1" id="actions">
+    <section class="details-box mt-3 p-2" id="actions">
       <h5 class="bold mr-3">Actions</h5>
     </section>
-    <section class="details-box mt-2 p-1" id="legendary">
+    <section class="details-box mt-3 p-2" id="legendary">
       <h5 class="bold mr-3">Legendary Actions</h5>
     </section>
   `);
   
   monster.special_abilities.forEach(ability => {
     $('#abilities').append(`
-    <h6 class="bold mt-2">${ability.name}</h6>
-    <span>${ability.desc}</span>
+    <h6 class="bold mt-4">${ability.name}</h6>
+    <span class="text-justify">${ability.desc}</span>
     `);
   });
       
   monster.actions.forEach(action => {
     $('#actions').append(`
-    <h6 class="bold mt-2">${action.name}</h6>
-    <span>${action.desc}</span>
+    <h6 class="bold mt-4">${action.name}</h6>
+    <span class="text-justify">${action.desc}</span>
     <span>Attack Bonus: ${action.attack_bonus ? action.attack_bonus : '-----'}</span>
     <span>Damage Dice: ${action.damage_dice ? action.damage_dice : '-----'}</span>
     <span>Damage Bonus: ${action.damage_bonus ? action.damage_bonus : '-----'}</span>
@@ -158,8 +158,8 @@ function detailMonster(monster) {
       
   monster.legendary_actions.forEach(legendary => {
     $('#legendary').append(`
-    <h6 class="bold mt-2">${legendary.name}</h6>
-    <span>${legendary.desc}</span><br>
+    <h6 class="bold mt-4">${legendary.name}</h6>
+    <span class="text-justify" >${legendary.desc}</span><br>
     `);
   });
 }
