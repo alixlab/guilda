@@ -75,9 +75,10 @@ Entrevistas com os usuários utilizando o Protótipo Inicial Digital
 -Diminuímos a velocidade de troca entre as imagens do carrossel.
 
 
-## Protótipo Final
+## Protótipo
 
-*Protótipo Final Digital Figma
-[Link](https://www.figma.com/?????????????????????????????????????????????????)
+*Protótipo Digital Figma
+[Link](https://www.figma.com/proto/KKjyZZBOiIZpGUMFkADLKjUc/Untitled?scaling=scale-down)
 
-
+*Protótipo Digital Figma - Versão 2.0
+[Link](https://www.figma.com/proto/TenIuftZ2HbqQPpEHA9wvf/Guilda-2.0?scaling=scale-down)
