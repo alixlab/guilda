@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="/public/img/favicon.png"/>
   <link rel="stylesheet" href="style/style.css">
   <title>Guilda</title>
 </head>
+
 <body data-spy="scroll" data-target="#navbar-responsive">
-  <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-intense" style="background-color: #60656A;">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-intense" style="background-color: #60656A;">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-responsive">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -43,7 +46,7 @@
           <img class="logo img-fluid" src="img/logo.png">
         </picture>
         <div class="container">
-          <div class="row">
+          <div class="row d-flex flex-column">
             <div class="d-flex  mx-auto">
               <section class="col-xs-4 d-flex flex-column">
                 <a class="btn btn-clear btn-sm btn-min-block btn-margin ml-0" style="background-color: #A63934;"
@@ -75,13 +78,10 @@
                   style="background-color: #648748;">Sheets</a>
               </section>
             </div>
-          </div>
-          <div class="row">
-            <div class="d-flex  mx-auto">
-              <section class="d-flex flex-column text-center">
-                <a class="btn-premium btn-margin btn-sm" style="width:350px; background-color: #3B5C75" href="">Upgrade
-                  to Premium</a> </section>
-            </div>
+            <section class="mt-4 d-flex flex-column text-center mx-auto">
+              <a class="btn-premium btn-margin btn-sm" style="width:350px; background-color: #3B5C75" href="">Upgrade
+                to Premium</a>
+            </section>
           </div>
         </div>
       </div>
@@ -95,4 +95,5 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="scripts/index.js"></script>
 </body>
+
 </html>

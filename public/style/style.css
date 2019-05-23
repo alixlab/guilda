@@ -1,6 +1,5 @@
 body {
     font-size: 12px;
-    background:  rgb(218, 218, 218);
 }
 
 header .carousel-inner .item {
@@ -11,22 +10,16 @@ header .carousel-inner .item {
     background-color: transparent;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    font-size: 16px;
-    color: #FFF;
-    font-weight: bold;
-}
-
 .navbar-nav .nav-link {
-    font-size: 16px;
+    font-size: 1rem;
     color: #FFF;
-    font-weight: bold;
+    font-weight: 500;
+
 }
 
 .navbar-nav:hover .nav-link:hover {
     font-size: 16px;
-    color: black;
-    font-weight: bold;
+    color: rgb(105, 78, 78);
 }
 
 .banner {
@@ -117,17 +110,13 @@ article {
     box-shadow: none;
 }
 
-.bold {
-    font-weight: 600;
-}
-
 .btn-clear {
     color: #FFF;
     background-color: transparent;
     border-color: #C3BEBA;
     border-radius: 1, 5em / 5em;
     margin-right: 15px;
-    font-weight: 600;
+    font-weight: 500;
     box-shadow: 0 2px 0 #C3BEBA;
 }
 
@@ -146,9 +135,10 @@ article {
     border-color: #C3BEBA;
     border-radius: 1, 5em / 5em;
     width: 100%;
-    font-weight: 600;
+    font-weight: 500;
     box-shadow: 0 2px 0 #C3BEBA;
     position: relative;
+    text-decoration: none;
 }
 
 .btn-premium::after {
@@ -165,6 +155,7 @@ article {
 .btn-premium:hover {
     color: #F8F119;
     background-color: #366181;
+    text-decoration:none;
 }
 
 .details-box {

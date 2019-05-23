@@ -163,5 +163,5 @@ function detailMonster(monster) {
     `);
   });
 }
-      
+     
 displayMonsters();
