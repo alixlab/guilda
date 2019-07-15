@@ -1,5 +1,7 @@
 #Projeto Open House Laboratoria - Livros da Guilda
 
+![guilda](https://user-images.githubusercontent.com/46815021/61192972-8cd75580-a68e-11e9-9dea-69dca3e01d95.jpg)
+
 ## Índice
 
 * [Preâmbulo](#preâmbulo)
